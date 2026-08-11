@@ -1,8 +1,8 @@
 class DashP < Formula
   desc "A single CLI for any coding agent"
   homepage "https://github.com/venabots/dash-p"
-  url "https://github.com/venabots/dash-p/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "86e63ade49afd072ddac7647fb6855aca5663e3e80da14e1d179bed6940f12f0"
+  url "https://github.com/venabots/dash-p/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "60f5ead0b2394210d8e7c22820ddc316f167e346e6cb21586177a7a13b2874e3"
   head "https://github.com/venabots/dash-p.git", branch: "main"
 
   # The v0.3.0 source still builds the `anyagent` binary from the pre-move
