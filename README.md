@@ -10,9 +10,10 @@ brew tap venabots/tap
 
 ## Formulas
 
-| Formula                                      | Description                       |
-| -------------------------------------------- | --------------------------------- |
-| [dash-p](https://github.com/venabots/dash-p) | A single CLI for any coding agent |
+| Formula                                              | Description                                                              |
+| ---------------------------------------------------- | ------------------------------------------------------------------------ |
+| [dash-p](https://github.com/venabots/dash-p)         | A single CLI for any coding agent                                        |
+| [review-prs](https://github.com/venabots/review-prs) | Pick open GitHub PRs and fan out parallel reviews into new terminal tabs |
 
 ### Install a formula
 
