@@ -2,7 +2,7 @@ class ReviewPrs < Formula
   desc "Pick open GitHub PRs and fan out parallel reviews into new terminal tabs"
   homepage "https://github.com/venabots/review-prs"
   url "https://github.com/venabots/review-prs/archive/refs/tags/v0.8.0.tar.gz"
-  sha256 "14c7bf3580743d8aa08872b86247c400060bcb8694724c39a6be560945401adc"
+  sha256 "d9cb537835f4efb5a38f93912ba69d4b1e2280edf1da44f722221254d168400c"
   head "https://github.com/venabots/review-prs.git", branch: "main"
   license "MIT"
 
