@@ -1,8 +1,8 @@
 class ReviewPrs < Formula
   desc "Pick open GitHub PRs and fan out parallel reviews into tabs or headless workers"
   homepage "https://github.com/venabots/review-prs"
-  url "https://github.com/venabots/review-prs/archive/refs/tags/v0.9.0.tar.gz"
-  sha256 "9f7b7d30f432b2145cdf20a3a716ca31de327c0d35a3534676cdd080189b4dc7"
+  url "https://github.com/venabots/review-prs/archive/refs/tags/v0.10.0.tar.gz"
+  sha256 "91b25726542a7ad2dca8f3ec6c5d09af984a248b687b1416bf8cacc7aa313407"
   head "https://github.com/venabots/review-prs.git", branch: "main"
   license "MIT"
 
