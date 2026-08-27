@@ -1,11 +1,7 @@
 class Autoreview < Formula
   desc "Automated code review: watch a repo's PRs and review each with a panel of models"
   homepage "https://github.com/venabots/autoreview"
-  # url and sha256 are rewritten by the repo's bump-tap workflow on every tag
-  # push. They point at the first tag under the new name; until that tag
-  # exists this formula cannot install, which is the same state the previous
-  # one was already in -- it installed a bash script and a lib/ directory the
-  # rust port deleted.
+  # Rewritten by the repo's bump-tap workflow on every tag push.
   url "https://github.com/venabots/autoreview/archive/refs/tags/v0.11.0.tar.gz"
   sha256 "6be1b4873230987bc348dd29084526ac4c93eb97d005ba533143ff17548d232d"
   head "https://github.com/venabots/autoreview.git", branch: "main"
