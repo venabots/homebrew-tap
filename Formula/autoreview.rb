@@ -7,7 +7,7 @@ class Autoreview < Formula
   # one was already in -- it installed a bash script and a lib/ directory the
   # rust port deleted.
   url "https://github.com/venabots/autoreview/archive/refs/tags/v0.11.0.tar.gz"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "6be1b4873230987bc348dd29084526ac4c93eb97d005ba533143ff17548d232d"
   head "https://github.com/venabots/autoreview.git", branch: "main"
   license "MIT"
 
