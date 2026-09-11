@@ -1,5 +1,5 @@
 class DashP < Formula
-  desc "A single CLI for any coding agent"
+  desc "Single CLI for any coding agent"
   homepage "https://github.com/venabots/dash-p"
   url "https://github.com/venabots/dash-p/archive/refs/tags/v0.4.0.tar.gz"
   sha256 "60f5ead0b2394210d8e7c22820ddc316f167e346e6cb21586177a7a13b2874e3"

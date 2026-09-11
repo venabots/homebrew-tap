@@ -13,7 +13,7 @@ brew tap venabots/tap
 | Formula                                              | Description                                                                      |
 | ---------------------------------------------------- | -------------------------------------------------------------------------------- |
 | [autoreview](https://github.com/venabots/autoreview) | Automated code review: watch a repo's PRs and review each with a panel of models |
-| [dash-p](https://github.com/venabots/dash-p)         | A single CLI for any coding agent                                                |
+| [dash-p](https://github.com/venabots/dash-p)         | Single CLI for any coding agent                                                  |
 
 `autoreview` installs three binaries: `autoreview`, `panel`, and `review-prs`.
 
