@@ -4,8 +4,8 @@ class Autoreview < Formula
   # Rewritten by the repo's bump-tap workflow on every tag push.
   url "https://github.com/venabots/autoreview/archive/refs/tags/v0.15.0.tar.gz"
   sha256 "32782ac3a2cb15b26bc9a81784936fd5c8b4f14e530d11ff88d86936ff9763b2"
-  head "https://github.com/venabots/autoreview.git", branch: "main"
   license "MIT"
+  head "https://github.com/venabots/autoreview.git", branch: "main"
 
   depends_on "rust" => :build
   depends_on "gh"
