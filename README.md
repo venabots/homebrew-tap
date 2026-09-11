@@ -10,14 +10,17 @@ brew tap venabots/tap
 
 ## Formulas
 
-| Formula                                              | Description                                                              |
-| ---------------------------------------------------- | ------------------------------------------------------------------------ |
-| [dash-p](https://github.com/venabots/dash-p)         | A single CLI for any coding agent                                        |
-| [review-prs](https://github.com/venabots/review-prs) | Pick open GitHub PRs and fan out parallel reviews into new terminal tabs |
+| Formula                                              | Description                                                                      |
+| ---------------------------------------------------- | -------------------------------------------------------------------------------- |
+| [autoreview](https://github.com/venabots/autoreview) | Automated code review: watch a repo's PRs and review each with a panel of models |
+| [dash-p](https://github.com/venabots/dash-p)         | A single CLI for any coding agent                                                |
+
+`autoreview` installs three binaries: `autoreview`, `panel`, and `review-prs`.
 
 ### Install a formula
 
 ```sh
+brew install venabots/tap/autoreview
 brew install venabots/tap/dash-p
 ```
 
