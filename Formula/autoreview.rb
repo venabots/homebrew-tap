@@ -2,8 +2,8 @@ class Autoreview < Formula
   desc "Automated code review: watch a repo's PRs and review each with a panel of models"
   homepage "https://github.com/venabots/autoreview"
   # Rewritten by the repo's bump-tap workflow on every tag push.
-  url "https://github.com/venabots/autoreview/archive/refs/tags/v0.22.0.tar.gz"
-  sha256 "28fec636916a393261c741b82a75a2264b4ce859af3e2f79d427449933503fe1"
+  url "https://github.com/venabots/autoreview/archive/refs/tags/v0.23.0.tar.gz"
+  sha256 "7a8b094e3fbd23eb756360f18e172c969b5eb69cf62d25b8a6c8eee61b0d31f9"
   license "MIT"
   head "https://github.com/venabots/autoreview.git", branch: "main"
 
