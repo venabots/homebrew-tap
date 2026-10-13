@@ -1,27 +1,24 @@
 class Autoreview < Formula
-  desc "Automated code review: watch a repo's PRs and review each with a panel of models"
+  desc "Review your team's PRs and handle your own, from one terminal view"
   homepage "https://github.com/venabots/autoreview"
   # Rewritten by the repo's bump-tap workflow on every tag push.
-  url "https://github.com/venabots/autoreview/archive/refs/tags/v0.24.0.tar.gz"
-  sha256 "e1f8a0e7570fb6122509a91104390233d293a437eb78c28913a9ae7e21a4da49"
+  url "https://github.com/venabots/autoreview/archive/refs/tags/v0.25.0.tar.gz"
+  sha256 "1d438e1831717d37786cdfac92e5b99fe260607f0cab4c53699b0ba3954e4f79"
   license "MIT"
   head "https://github.com/venabots/autoreview.git", branch: "main"
 
-  depends_on "rust" => :build
+  depends_on "go" => :build
   depends_on "gh"
-  # gum drives the interactive picker only; a sweep never reaches it.
-  depends_on "gum"
   # The built-in reviewer runs through dash-p.
   depends_on "venabots/tap/dash-p"
 
   def install
-    # One crate, three binaries: autoreview, panel and review-prs.
-    system "cargo", "install", *std_cargo_args
+    # One binary. The reviewer skills are embedded in it.
+    system "go", "build", *std_go_args(ldflags: "-s -w -X main.version=#{version}"), "./cmd/autoreview"
   end
 
   test do
-    assert_match "review open PRs headlessly", shell_output("#{bin}/autoreview --help")
-    assert_match "several models at once", shell_output("#{bin}/panel --help")
-    assert_match "fan out a review per PR", shell_output("#{bin}/review-prs --help")
+    assert_match "autoreview #{version}", shell_output("#{bin}/autoreview --version")
+    assert_match "review your team's PRs and handle your own", shell_output("#{bin}/autoreview --help")
   end
 end
